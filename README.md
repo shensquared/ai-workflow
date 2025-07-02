@@ -1,4 +1,12 @@
-# <img src='Workflow/icon.png' width='45' align='center' alt='icon'> ChatGPT / DALL-E Alfred Workflow
+# <img src='Workflow/icon.png' width='45' align='center' alt='icon'> Ollama Alfred Workflow
+
+This workflow is a simple modification of the official Alfred OpenAI workflow for personal use with Ollama servers. The integration works by modifying the API endpoint to point to local Ollama instances instead of OpenAI's servers.
+
+**Note:** This is a personal hack; many prompts and annotations were not cleaned up. 
+
+--- 
+Upstream README BELOW:
+--- 
 
 OpenAI integrations
 
@@ -9,7 +17,7 @@ OpenAI integrations
 1. Create an OpenAI account and [log in](https://platform.openai.com/login?launch).
 2. On the [API keys page](https://platform.openai.com/api-keys), click `+ Create new secret key`.
 3. Name your new secret key and click `Create secret key`.
-4. Copy your secret key and add it to the [Workflow’s Configuration](https://www.alfredapp.com/help/workflows/user-configuration/).
+4. Copy your secret key and add it to the [Workflow's Configuration](https://www.alfredapp.com/help/workflows/user-configuration/).
 
 ## Usage
 
