@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.alfredapp.vitor.openai</string>
+	<string>edu.mit.shenshen.ollama</string>
 	<key>connections</key>
 	<dict>
 		<key>002874FF-3AE4-4E8F-A4F8-65844E5D6CFB</key>
@@ -718,13 +718,13 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Vítor Galvão</string>
+	<string>Vítor Galvão (modified for shensquared own use)</string>
 	<key>description</key>
-	<string>OpenAI integrations</string>
+	<string>Ollama integrations</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>ChatGPT / DALL-E</string>
+	<string>Ollama</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -2416,20 +2416,16 @@ Query DALL·E via the `dalle` keyword.
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>gpt-4.1-nano</string>
+				<string>deepseek-r1:70b</string>
 				<key>pairs</key>
 				<array>
 					<array>
-						<string>GPT 4.1 nano</string>
-						<string>gpt-4.1-nano</string>
+						<string>deepseek-r1:14b</string>
+						<string>deepseek-r1:14b</string>
 					</array>
 					<array>
-						<string>GPT-4o mini</string>
-						<string>gpt-4o-mini</string>
-					</array>
-					<array>
-						<string>GPT 4.1 mini</string>
-						<string>gpt-4.1-mini</string>
+						<string>deepseek-r1:70b</string>
+						<string>deepseek-r1:70b</string>
 					</array>
 					<array>
 						<string>GPT 4.1</string>
@@ -2721,20 +2717,43 @@ Query DALL·E via the `dalle` keyword.
 			<string>textfield</string>
 			<key>variable</key>
 			<string>openai_org_id</string>
+	</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>oll</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Ollama Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>ollama_keyword</string>
 		</dict>
 	</array>
 	<key>variables</key>
 	<dict>
 		<key>chatgpt_api_endpoint</key>
-		<string>https://api.openai.com/v1/chat/completions</string>
+		<string>http://172.16.24.4:11434</string>
 		<key>chatgpt_model_override</key>
 		<string></string>
 		<key>dalle_api_endpoint</key>
 		<string>https://api.openai.com/v1/images/generations</string>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
 	<string>2025.4</string>
 	<key>webaddress</key>
-	<string>https://github.com/alfredapp/openai-workflow/</string>
+	<string>https://github.com/shensquared/ai-workflow.git</string>
 </dict>
 </plist>
